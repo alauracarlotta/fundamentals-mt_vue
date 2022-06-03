@@ -14,7 +14,7 @@
 		
 		<p v-show="showPhone">Mande um email para: {{ phone }} </p>
 		<div>
-			<button @click="phoneNumber">Mostra Telefone</button>
+			<button @click="phoneNumber">{{ textoBotao }}</button>
 		</div>
 
 		<p>Para acessar o meu portifolio, <a v-bind:href="link" target="blank" rel="noreferrer noopener">basta clicar aqui</a></p>
@@ -35,11 +35,24 @@
 			return {
 				isWorking: false,
 				showEmail: true,
-				showPhone: true,
+				showPhone: false,
 				email: 'laura@gmail.com',
 				phone: '(11) 98758-8455',
-				link: 'https://www.linkedin.com/in/lauracarlotta/'
+				link: 'https://www.linkedin.com/in/lauracarlotta/',
+				textoBotao: 'Mostra phone'
 			}
 		},
+
+		methods: {
+			phoneNumber() {
+				this.showPhone = !this.showPhone;
+
+				if(!this.showPhone) {
+					this.textoBotao = 'Mostra phone';
+				} else {
+					this.textoBotao = 'Esconde phone';
+				}
+			}
+		}
 	}
 </script>

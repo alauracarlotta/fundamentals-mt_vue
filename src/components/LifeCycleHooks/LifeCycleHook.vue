@@ -22,15 +22,23 @@
 			}
 		},
 
+		methods: {
+			lifeCycleTestMethods() {
+				console.log('Executei');
+			}
+		},
+
 		created() {
 			setTimeout(() => {
 				this.nome = 'Laura';
+				this.lifeCycleTestMethods();
 			}, 1000);
 		},
 
 		mounted() {
 			setTimeout(() => {
 				this.nome = 'Carlota';
+				this.lifeCycleTestMethods();
 			}, 2000);
 		}
 	}
