@@ -1,0 +1,16 @@
+#picturesProfile{
+	.bgc-image {
+		height: 50vh;
+		width: 100vw;
+	}
+
+	.profile-image{
+		height: 200px;
+		width: 200px;
+		border-radius: 100%;
+		background-color: transparent;
+		position: relative;
+		bottom: 100px;
+		left: 50px;
+	}
+}
