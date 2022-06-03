@@ -16,4 +16,4 @@ export default {
 }
 </script>
 
-<style lang="scss" src="./HelloWorld.scss" />
+<style lang="scss" scoped src="./HelloWorld.scss" />

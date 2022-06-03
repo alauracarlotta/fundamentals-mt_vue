@@ -3,9 +3,9 @@
 		<Picture/>
 		<p v-if="isWorking">Estou trabalhando no momento;</p>
 		<p v-else>Estou em busca de novas oportunidades, posso iniciar imediatamente;</p>
-		<p>Tenho a expriência de 1 ano como dev front-end;</p>
+		<h1>Tenho a expriência de 1 ano como dev front-end;</h1>
 		<p>Trabalhei com liguagens: JS, HTM e CSS;</p>
-		<p>Usei como ferramentas também: Linux ubuntu e git.</p>
+		<p class="teste">Usei como ferramentas também: Linux ubuntu e git.</p>
 
 		<p v-if="1 > 2">Teste 1</p>
 		<p v-if="4 > 2">Teste 2</p>

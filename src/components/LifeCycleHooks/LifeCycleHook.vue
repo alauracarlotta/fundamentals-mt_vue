@@ -1,5 +1,5 @@
 <template>
-	<h2>Meu nome é: <em>{{ nome }}</em></h2>
+	<h2 class="teste-hierarquia">Meu nome é: <em>{{ nome }}</em></h2>
 	<Info/>
 	<Form/>
 </template>
@@ -43,3 +43,9 @@
 		}
 	}
 </script>
+
+<style>
+.teste-hierarquia {
+	color: #FF0
+}
+</style>
