@@ -1,17 +1,20 @@
 <template>
 	<nav>
 		<ul class="d-flex justify-content-start">
-			<a href="#"><li class="px-5">Home</li></a>
-			<a href="#"><li class="px-5">Hamburguers</li></a>
-			<a href="#"><li class="px-5">Sucos</li></a>
-			<a href="#"><li class="px-5">Porções</li></a>
+			<a v-for="items in menu" :key="items" href="#"><li class="px-5">{{ items }}</li></a>
 		</ul>
 	</nav>
 </template>
 
 <script>
 	export default {
-		name: 'Main-Menu'
+		name: 'Header',
+
+		data() {
+			return {
+				menu: ['Home', 'Hamburguers', 'Sucos', 'Porções'],
+			}
+		}
 	}
 </script>
 

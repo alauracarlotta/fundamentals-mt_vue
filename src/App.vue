@@ -1,10 +1,8 @@
-<template> <!-- Componente root da aplicação -->
-
-	<div> <!-- Templates do vue só podem ter um elemento root por isso, é normalmente visto divs logo após a tag template -->
+<template>
+	<div>
 		<Index/>
 		<!-- <p>{{ testando }}</p> -->
 	</div>
-	
 </template>
 
 <script>
