@@ -4,7 +4,20 @@
 		<p v-if="isWorking">Estou trabalhando no momento;</p>
 		<p v-else>Estou em busca de novas oportunidades, posso iniciar imediatamente;</p>
 		<h1>Tenho a expriência de 1 ano como dev front-end;</h1>
-		<p>Trabalhei com liguagens: JS, HTM e CSS;</p>
+		<p>Trabalhei com liguagens no front-end: </p>
+		<ul>
+			<li v-for="(linguagem, index) in frontEnd" :key="index">{{ linguagem }}</li> 
+		</ul>
+
+		<p>Trabalhei com liguagens no back-end: </p>
+		<ul>
+			<!-- <li v-for="item in backEnd" :key="item"> ou -->
+			<li v-for="item in backEnd" :key="item.id">
+				{{ item.lang }} - {{ item.experience }} 
+				<span v-if="item.experience > 1">anos.</span> 
+				<span v-else>ano.</span>
+			</li>
+		</ul>
 		<p class="teste">Usei como ferramentas também: Linux ubuntu e git.</p>
 
 		<p v-if="1 > 2">Teste 1</p>
@@ -39,7 +52,30 @@
 				email: 'laura@gmail.com',
 				phone: '(11) 98758-8455',
 				link: 'https://www.linkedin.com/in/lauracarlotta/',
-				textoBotao: 'Mostra phone'
+				textoBotao: 'Mostra phone',
+				frontEnd: [
+					'Javascript',
+					'jQuery',
+					'HTML',
+					'CSS'
+				],
+				backEnd: [
+					{
+						id: 1,
+						lang: 'Python',
+						experience: 2
+					},
+					{
+						id: 2,
+						lang: 'PHP',
+						experience: 1
+					},
+					{
+						id: 3,
+						lang: '.NET',
+						experience: 4
+					},
+				]
 			}
 		},
 
