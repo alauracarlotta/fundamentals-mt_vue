@@ -1,5 +1,6 @@
 <template>
 	<h2 class="teste-hierarquia">Meu nome é: <em>{{ nome }}</em></h2>
+	<MultiplosEventos/>
 	<Info/>
 	<Form/>
 </template>
@@ -7,13 +8,15 @@
 <script>
 	import Info from '../Info/Info.vue';
 	import Form from '../Form.vue';
+	import MultiplosEventos from '../MultiplosEventos/MultiplosEventos.vue';
 
 	export default {
 		name: 'LifeCycleHook',
 
 		components: {
 			Info,
-			Form
+			Form,
+			MultiplosEventos,
 		},
 
 		data() {
