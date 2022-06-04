@@ -1,8 +1,8 @@
 <template>
 	<h2 class="teste-hierarquia">Meu nome é: <em>{{ nome }}</em></h2>
-	<MultiplosEventos/>
-	<ReutilizacaoComponent/>
-	<Info/>
+	<MultiplosEventos />
+	<ReutilizacaoComponent />
+	<Info petType="catchorinha" petName="Maggiezinha" :userEmailProps="userEmail" :isWorking="false" />
 	<Form/>
 </template>
 
@@ -25,6 +25,7 @@
 		data() {
 			return {
 				nome: 'Ainda não sei!',
+				userEmail: 'carlottattoo@gmail.com'
 			}
 		},
 

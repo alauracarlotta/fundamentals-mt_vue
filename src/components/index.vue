@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<main class="container">
-			<Header/>
+			<Header :esta_logado="true" />
 			<Footer/>
 		</main>
 	</div>

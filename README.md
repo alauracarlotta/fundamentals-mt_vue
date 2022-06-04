@@ -27,3 +27,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 => Executa o código a partir do momento que o componente é criado;
 
 => Estes gatilhos são interessantes para alterar a aplicação em diversas etapas diferentes;
+
+=> PROPS: como passar dados de um componente para outro;

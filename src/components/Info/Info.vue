@@ -25,12 +25,16 @@
 
 		<p v-show="showEmail">Mande um email para: {{ email }} </p> <!-- Mostra ou não mostra, não há um 'v-show-else'. Geralmente usado para botões checkbox -->
 		
+		<p class="emailSecondary">emailSecondary: {{ userEmailProps  }}</p>
+
 		<p v-show="showPhone">Mande um email para: {{ phone }} </p>
 		<div>
 			<button @click="phoneNumber">{{ textoBotao }}</button>
 		</div>
 
 		<p>Para acessar o meu portifolio, <a v-bind:href="link" target="blank" rel="noreferrer noopener">basta clicar aqui</a></p>
+	
+		<p class="pets">Eu seu mãe de uma {{ petType }}, a {{ petName }}!</p>
 	</div>
 </template>
 
@@ -44,9 +48,15 @@
 			Picture,
 		},
 
+		props: {
+			petName: String,
+			petType: String,
+			userEmailProps: String,
+			isWorking: Boolean
+		},
+
 		data() {
 			return {
-				isWorking: false,
 				showEmail: true,
 				showPhone: false,
 				email: 'laura@gmail.com',
@@ -92,3 +102,12 @@
 		}
 	}
 </script>
+
+<style lang="scss" scoped>
+	div {
+		p.pets,
+		p.emailSecondary {
+			font-size: 3rem;
+		}
+	}
+</style>
