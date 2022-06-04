@@ -15,18 +15,22 @@
 			<br/>
 			<Submit/>
 		</form>
+		<ReutilizacaoComponent/>
 	</div>
 </template>
 
 <script>
-	// import InputText from './Form/InputText.vue'
-	import Submit from './Form/Submit.vue'
+	// import InputText from './Form/InputText.vue;'
+	import Submit from './Form/Submit.vue';
+	import ReutilizacaoComponent from './ReutilizacaoComponent/ReutilizacaoComponent.vue';
+
 	export default {
 		name: 'Form',
 
 		components: {
 			// InputText,
 			Submit,
+			ReutilizacaoComponent,
 		},
 
 		data() {
