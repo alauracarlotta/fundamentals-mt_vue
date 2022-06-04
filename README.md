@@ -28,4 +28,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 => Estes gatilhos são interessantes para alterar a aplicação em diversas etapas diferentes;
 
-=> PROPS: como passar dados de um componente para outro;
+=> PROPS: como passar dados de um componente para outro => de um pai para um filho (de cima pra baixo);
+
+=> $emit: como passar dados de um componente para outro => de um filho para um pai (de baixo pra cima);
